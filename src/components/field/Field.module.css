@@ -1,0 +1,29 @@
+.root {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 36px;
+	margin-top: 24px;
+}
+.winner {
+	background: #c143ff !important;
+}
+
+.fieldItem {
+	aspect-ratio: 1 / 1;
+	background-color: #43115b;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 2rem;
+	border: 1px solid #b23eeb;
+	cursor: pointer;
+	border-radius: 12px;
+}
+
+.X_fieldItem {
+	color: #48d2fe;
+}
+
+.O_fieldItem {
+	color: #e2be00;
+}

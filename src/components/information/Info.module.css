@@ -1,0 +1,18 @@
+.infoText {
+	width: max-content;
+	margin: 0;
+	color: #000000;
+	font-size: 24px;
+	padding: 12px 8px;
+	border-radius: 8px;
+	font-family: cursive;
+	font-weight: 700;
+}
+
+.X_infoText {
+	background: #48d2fe;
+}
+
+.O_infoText {
+	background: #e2be00;
+}
