@@ -5,6 +5,7 @@ export const initialState = {
 	currentPlayer: 'X',
 	winner: null,
 	isDraw: false,
+	winnerLine: [],
 };
 
 export const ticTacToeReducer = (state = initialState, action) => {

@@ -1,12 +1,17 @@
 import { makeMove } from '@/redux/actions';
-import { store } from '@/redux/store';
+import { selectBoard } from '@/redux/selectors';
+import { useDispatch, useSelector } from 'react-redux';
+import { selectWinnerLine } from '../../redux/selectors';
 import FieldLayout from './FieldLayout';
 
 const Field = () => {
-	const { board, winnerLine } = store.getState();
+	const board = useSelector(selectBoard);
+	const winnerLine = useSelector(selectWinnerLine);
+
+	const dispatch = useDispatch();
 
 	const onClick = (index) => {
-		store.dispatch(makeMove(index));
+		dispatch(makeMove(index));
 	};
 
 	return <FieldLayout board={board} onClick={onClick} winnerLine={winnerLine} />;

@@ -3,6 +3,6 @@ export const makeMove = (index) => ({
 	payload: { index },
 });
 
-export const resetGame = () => ({
+export const RESET_GAME = {
 	type: 'RESET_GAME',
-});
+};
